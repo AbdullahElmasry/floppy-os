@@ -158,7 +158,7 @@ void write_bird(u8int *video_buffer, bird_t *bird)
 }
 
 // Set a pixel in the video_buffer
-inline void set_pixel(u8int *video_buffer, u32int x, u32int y, u8int color)
+static inline void set_pixel(u8int *video_buffer, u32int x, u32int y, u8int color)
 {
     video_buffer[y*SCREEN_WIDTH+x] = color;
 }

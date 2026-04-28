@@ -1,6 +1,7 @@
 #include "descriptor_tables.h"
 #include "kernel.h"
 #include "memory.h"
+#include "port.h"
 
 extern void idt_flush(u32int);
 static void init_idt();
